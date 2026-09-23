@@ -9,12 +9,12 @@ public abstract class Customer {
 	private Integer patience;
 	private static final String[] NAMES = {"Camellia", "Garry", "Rachel", "Ocram", "Nanashi", "Sunny", "Mogeko", "Aqua"};
 	protected static final String[] RECIPES = {"Cheeseburger", "Bacon Burger", "Veggie Burger", "Deluxe Burger"};
-	protected static final int[] INGREDIENT_COUNTS = {4, 6, 5, 7};
+	protected static final int[] INGREDIENT_COUNTS = {4, 6, 6, 8};
 	
 	public Customer() {
 		super();
 		this.name = NAMES[rnd.nextInt(NAMES.length)];
-		this.patience = rnd.nextInt(21) + 15;
+		this.patience = rnd.nextInt(20) + 16;
 	}                
 	
 	public abstract String getName();
