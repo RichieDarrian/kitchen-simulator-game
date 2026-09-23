@@ -5,7 +5,7 @@ restaurant during its busiest hours. The player manages customer orders
 with time limits, tracks ingredient inventory, and restocks when needed,
 all while running two modes side by side.
 
-## Quick start
+## Run it
 
 1. Install JDK 8 or later and make sure `javac` and `java` are on your PATH.
 2. Double-click `run.bat` (or run it from a terminal in the project root).
