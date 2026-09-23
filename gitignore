@@ -1,0 +1,11 @@
+# Compiled class files
+bin/
+*.class
+
+# Eclipse workspace-specific settings (keeping .classpath and .project
+# tracked so the repo can be imported directly as an Eclipse project)
+.settings/
+
+# OS files
+.DS_Store
+Thumbs.db
