@@ -1,8 +1,8 @@
-Lettuce#20
-Onions#20
-Bun#20
-Cheese#20
-Tomato#20
-Bacon#20
-Patty#20
-Pickles#20
+Lettuce#10
+Onions#10
+Bun#10
+Cheese#10
+Tomato#10
+Bacon#10
+Patty#10
+Pickles#10
