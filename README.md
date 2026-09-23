@@ -2,7 +2,7 @@
 
 ![KrazyKitchen UI](KrazyKitchenUI.png)
 
-A console based OOP project that simulates the hectic environment of a
+A console-based OOP project that simulates the hectic environment of a
 restaurant during its busiest hours. The player manages customer orders
 with time limits, tracks ingredient inventory, and restocks when needed,
 all while running two modes side by side.
