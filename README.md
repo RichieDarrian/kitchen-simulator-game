@@ -36,7 +36,7 @@ On start, the player is shown 4 options (input validated to 1 through 4):
 
 ## Output Mode
 
-Displays, refreshed every second:
+Provides a live display, refreshed every second:
 
 - Restaurant's Name
 - Active Orders: customer name, recipe name, reward, and time left for
@@ -51,7 +51,7 @@ Pressing Enter exits the loop and shows the player's final score.
 - `process <order_number>`: process a specific active order. The game
   prompts for the ingredients needed and checks the input against the
   order's recipe.
-  - Correct, in stock, not expired: reward added to score, inventory
+  - Correct, in stock, and not expired: reward added to score, inventory
     deducted, order removed.
   - Incorrect ingredients, insufficient stock, or expired order: order
     fails, no reward.
@@ -104,7 +104,7 @@ orders are removed and their reward is applied to the score.
 
 ### Inventory (`inventory.txt`)
 
-Starting stock, 10 units of each ingredient:
+Starting stock is 10 units of each ingredient:
 
 ```
 Bun, Patty, Lettuce, Cheese, Tomato, Bacon, Pickles, Onions
@@ -150,7 +150,7 @@ run.bat         # one-click compile and launch
 
 ## Running it
 
-### Easiest: the batch file
+### Batch file (easiest)
 
 Double-click `run.bat`, or from a terminal in the project root:
 
