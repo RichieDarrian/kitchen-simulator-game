@@ -147,7 +147,3 @@ run.bat         # one-click compile and launch
 
 - JDK 8 or later (with `javac` and `java` on your PATH)
 - Windows (for `run.bat`)
-
-1. `File > Import > Existing Projects into Workspace`
-2. Select this repository's root folder
-3. Run `Main.java` as a Java Application
