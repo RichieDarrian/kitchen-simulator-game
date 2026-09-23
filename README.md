@@ -148,33 +148,6 @@ run.bat         # one-click compile and launch
 - JDK 8 or later (with `javac` and `java` on your PATH)
 - Windows (for `run.bat`)
 
-## Running it
-
-### Batch file (easiest)
-
-Double-click `run.bat`, or from a terminal in the project root:
-
-```bat
-run.bat
-```
-
-The script switches to the project root automatically, so
-`inventory.txt`, `restaurant.txt`, and `score.txt` are always found. It
-compiles and runs with the same JDK, so having an older Java also
-installed won't cause version errors. If compilation fails or Java isn't
-installed, it prints an error and waits before closing so you can read it.
-
-### Manual (macOS / Linux, or if you prefer)
-
-```bash
-javac -d bin src/main/Main.java src/models/*.java
-java -cp bin main.Main
-```
-
-Run these from the project root so the `.txt` data files are found.
-
-### From Eclipse
-
 1. `File > Import > Existing Projects into Workspace`
 2. Select this repository's root folder
 3. Run `Main.java` as a Java Application
