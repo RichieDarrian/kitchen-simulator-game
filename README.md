@@ -159,9 +159,10 @@ run.bat
 ```
 
 The script switches to the project root automatically, so
-`inventory.txt`, `restaurant.txt`, and `score.txt` are always found. If
-compilation fails or Java isn't installed, it prints an error and waits
-before closing so you can read it.
+`inventory.txt`, `restaurant.txt`, and `score.txt` are always found. It
+compiles and runs with the same JDK, so having an older Java also
+installed won't cause version errors. If compilation fails or Java isn't
+installed, it prints an error and waits before closing so you can read it.
 
 ### Manual (macOS / Linux, or if you prefer)
 
