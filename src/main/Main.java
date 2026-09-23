@@ -343,13 +343,19 @@ void inputMode() {
 				        String completingOrder = sc.nextLine();
 
 				        if (completingOrder.equals(String.join(", ", requiredIngredients))) {
-				            boolean canFulfillOrder = true;
+				        	boolean canFulfillOrder = true;
 
-				            for (Ingredient ingredient : inventory) {
-				                if (ingredient.getQuantity() <= 0) {
-				                    canFulfillOrder = false;
-				                    }
-				                }
+				        	for (Ingredient ingredient : inventory) {
+				        	    int needed = 0;
+				        	    for (String name : requiredIngredients) {
+				        	        if (name.equals(ingredient.getName())) {
+				        	            needed++;
+				        	        }
+				        	    }
+				        	    if (ingredient.getQuantity() < needed) {
+				        	        canFulfillOrder = false;
+				        	    }
+				        	}
 
 				            if (canFulfillOrder) {
 				                for (String ingredientName : requiredIngredients) {
@@ -364,7 +370,7 @@ void inputMode() {
                                 currentScore += gain;
                                 for (int num = 1; num <= orders.size(); num++) {
                                 	if (tempOrderNum == num) {
-                                		orders.remove(num);
+                                		orders.remove(num-1);
                                 	}
                                 }
                                 restaurantSaver();
